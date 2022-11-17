@@ -46,7 +46,7 @@
 
                 <!-- Notification -->
                 <div class="notification d-flex item-center">
-                    <button class="bell">
+                    <button class="btn btn-bell">
                         <i class="fa-solid fa-bell-slash"></i>
                     </button>
                     <div class="p-left-10">
@@ -58,10 +58,24 @@
 
                 <!-- Search bar -->
                 <form>
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                    <input type="text" placeholder="Search.." name="search">
+                    <button class="btn btn-search" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <input type="text" placeholder="Cerca o inizia una nuova chat" name="search">
                 </form>
                 <!-- /Search bar -->
+
+                <!-- Contacts list -->
+                <div class="container-list">
+                    <div v-for="contact in contacts" class="d-flex item-center avatar">
+                        <img src="/img/avatar_1.jpg" alt="michele">
+                        <div class="p-left-10">
+                            <span>{{ contact.name }}</span> 
+                            <h6>ultimo messaggio inviato</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Contacts list -->
             </div>
             <!-- /Lista delle Chat -->
 

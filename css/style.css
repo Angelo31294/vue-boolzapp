@@ -1,3 +1,9 @@
+@import url(reset.css);
+@import url(common.css);
+@import url(button.css);
+@import url(container.css);
+@import url(navigation.css);
+@import url(flex.css);
 /* -----------------
     RESET
 ----------------- */
@@ -45,14 +51,48 @@ a{
     padding: .625rem .9375rem;
 }
 
-.bell{
-    width: 3.125rem;
-    height: 3.125rem;
+input{
+    width: 85%;
+    font-size: .75rem;
+    padding: .3125rem;
+    border: 1px solid #eaeaea;
+}
+
+form{
+    background-color: #fafafa;
+    padding: .3125rem .625rem;
+    border-bottom: 1px solid #d8dbd7;
+}
+
+.avatar{
+    border-bottom: 1px solid #d8dbd7;
+    padding: .625rem 1.5625rem;
+    width: 100%;
+}
+
+/* -----------------
+    BUTTON
+----------------- */
+.btn{
     background-color: #fff;
     border: none;
+    cursor: pointer;
+}
+
+.btn-bell{
+    padding: 1.25rem;
     border-radius: 50%;
     font-size: 1.25rem;
     color: #8edafc;
+}
+
+.btn-search{
+    width: 15%;
+    padding: .3125rem;
+    font-size: .75rem;
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
 }
 
 /* -----------------
@@ -73,8 +113,13 @@ a{
     width: 60%;
 }
 
+.container-list{
+    height: calc(100% - 181.4px);
+    background-color: #fff;
+    overflow-y: auto;
+}
 /* -----------------
-    NAVIGAZIONE
+    NAVIGATION
 ----------------- */
 .nav-bar{
     background-color: #eaeaea;
@@ -82,12 +127,25 @@ a{
     padding: .3125rem 0;
     border-right: 1px solid #b1b1b1;
 }
+
 /* -----------------
     FLEX
 ----------------- */
 
 .d-flex{
     display: flex;
+}
+
+.direction-column{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-grow{
+    flex-grow: 1;
 }
 
 .justify-center{
