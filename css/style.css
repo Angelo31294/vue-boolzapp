@@ -1,0 +1,20 @@
+/* -----------------
+    RESET
+----------------- */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* -----------------
+    COMMON
+----------------- */
+body {
+    height: 100vh;
+    background: linear-gradient(
+    to bottom,
+    #009688 20%,
+    #d8dbd7 20% 80%
+  );
+}
