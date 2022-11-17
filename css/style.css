@@ -21,12 +21,12 @@ body{
 }
 
 .image{
-    max-width: 12.5rem;
+    max-width: 18.75rem;
     padding-left: .3125rem;
 }
 
 img{
-    max-width: 25%;
+    max-width: 3.125rem;
     border-radius: 50%;
 }
 
@@ -90,4 +90,12 @@ a{
 }
 .justify-around{
     justify-content: space-around;
+}
+
+/* -----------------
+    PADDING
+----------------- */
+
+.p-left-10{
+    padding-left: .625rem;
 }
