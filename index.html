@@ -20,87 +20,63 @@
         <!-- /CDN VueJS -->
         <title>Boolzapp</title>
     </head>
-    <body class="d-flex justify-center">
-
+    <body>
         <!-- Container Principale -->
-        <div id="app" class="container d-flex">
-
+        <div id="app" class="container">
             <!-- Lista delle Chat -->
-            <div class="container-left">
+            <div class="col-left">
+                <!-- Header left -->
+                <div class="header-app"></div>
+                <!-- /Header left -->
 
-                <!-- Nav-bar left -->
-                <nav class="nav-bar d-flex justify-between">
-                    <!-- Avatar io -->
-                    <div class="image d-flex item-center">
-                        <img src="/img/avatar_io.jpg" alt="avatar_io">
-                        <span class="p-left-10">Sofia</span>
-                    </div>
-                    <!-- /Avatar io -->
-                    <ul class="d-flex item-center justify-around list">
-                        <li><a href="#"><i class="fa-solid fa-circle-notch"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-message"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
-                    </ul>
-                </nav>
-                <!-- /Nav-bar left -->
-
-                <!-- Notification -->
-                <div class="notification d-flex item-center">
-                    <button class="btn btn-bell">
-                        <i class="fa-solid fa-bell-slash"></i>
-                    </button>
-                    <div class="p-left-10">
-                        <h5>Ricevi notifiche di nuovi messaggi</h5> 
-                        <a href="#"><small>ultimo accesso oggi alle 12:00</small></a>
-                    </div>
-                </div>
-                <!-- /Notification -->
+                <!-- Notifiche -->
+                <div class="notify"></div>
+                <!-- /Notifiche -->
 
                 <!-- Search bar -->
-                <form>
-                    <button class="btn btn-search" type="submit">
+                <form class="search-bar">
+                    <button class=" btn-search" type="submit">
                         <i class="fa fa-search"></i>
                     </button>
                     <input type="text" placeholder="Cerca o inizia una nuova chat" name="search">
                 </form>
                 <!-- /Search bar -->
 
-                <!-- Contacts list -->
-                <div class="container-list">
-                    <div v-for="contact in contacts" class="d-flex item-center avatar">
-                        <img src="/img/avatar_1.jpg" alt="michele">
-                        <div class="p-left-10">
-                            <span>{{ contact.name }}</span> 
-                            <h6>ultimo messaggio inviato</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Contacts list -->
+                <!-- Contacts -->
+                <div class="contacts"></div>
+                <!-- /Contacts -->
             </div>
             <!-- /Lista delle Chat -->
 
             <!-- Chat Aperta -->
-            <div class="container-right">
+            <div class="col-right">
+                <!-- Header right -->
+                <div class="header-app"></div>
+                <!-- /Header right -->
 
-                <!-- Nav-bar right -->
-                <nav class="nav-bar d-flex justify-between">
-                    <!-- Avatar chat -->
-                    <div class="image d-flex item-center">
-                        <img src="/img/avatar_1.jpg" alt="michele">
-                        <div class="p-left-10">
-                            <span>Michele</span> 
-                            <h6>ultimo accesso oggi alle 12:00</h6>
+                <!-- Messages -->
+                <div class="messages">
+                    <div class="message-container">
+                        <div class="message sent">
+                            ciao
                         </div>
                     </div>
-                    <!-- /Avatar chat -->
-                    <ul class="d-flex item-center justify-around list">
-                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
-                    </ul>
-                </nav>
-                <!-- /Nav-bar right -->
+                    <div class="message-container">
+                        <div class="message sent">
+                            ciao
+                        </div>
+                    </div>
+                    <div class="message-container">
+                        <div class="message received">
+                            ciao
+                        </div>
+                    </div>
+                </div>
+                <!-- /Messages -->
 
+                <!-- Send message -->
+                <div class="send-message"></div>
+                <!-- /Send message -->
             </div>
             <!-- /Chat Aperta -->
         </div>
@@ -109,3 +85,17 @@
         <script src="js/script.js"></script>
     </body>
 </html>
+
+<!-- icone colonna di sinistra -->
+<!-- <ul class="d-flex item-center justify-around list">
+    <li><a href="#"><i class="fa-solid fa-circle-notch"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-message"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+</ul> -->
+
+<!-- icone colonna di destra -->
+<!-- <ul class="d-flex item-center justify-around list">
+    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+</ul> -->

@@ -1,0 +1,84 @@
+/* -----------------
+    COMMON
+----------------- */
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #009688 20%, #d8dbd7 20% 100%);
+    padding: 1.25rem 1.875rem;
+}
+
+img {
+    max-width: 3.125rem;
+    border-radius: 50%;
+}
+
+.header-app{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    background-color: #eaeaea;
+    padding: .3125rem
+}
+
+.notify{
+    display: flex;
+    align-items: center;
+    background-color: #8edafc;
+    padding: .3125rem;
+}
+
+.search-bar{
+    background-color: #fafafa;
+    padding: .3125rem;
+    border-bottom: 1px solid #d8dbd7;
+}
+
+input{
+    width: 85%;
+    font-size: .75rem;
+    padding: .3125rem;
+    border: 1px solid #eaeaea;
+}
+
+.contacts{
+    background-color: #fff;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.messages{
+    background-image: url('/img/mine.jpg');
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 3.125rem 5rem;
+}
+
+.messages > .message-container:not(:last-child){
+    margin-bottom: .625rem;
+}
+
+.send-message{
+    display: flex;
+    background-color: #f3eeea;
+    padding: 1.875rem .3125rem;
+}
+
+.message-container{
+    display: flex;
+}
+
+.message{
+    max-width: 50%;
+    min-width: 10%;
+    border-radius: .625rem;
+    padding: .625rem;
+}
+
+.sent{
+    background-color: #d5f9ba;
+}
+
+.received{
+    background-color: #fff;
+}

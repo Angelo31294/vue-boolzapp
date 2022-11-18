@@ -1,0 +1,28 @@
+/* -----------------
+    CONTAINER
+----------------- */
+
+.container {
+    display: flex;
+    width: 80rem;
+    height: 100%;
+    border: 1px solid;
+    margin: auto;
+}
+
+.col-left, .col-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.col-left{
+    width: 40%;
+}
+
+.col-left > .header-app{
+    border-right: .0625rem solid #d6d6d6;
+}
+
+.col-right{
+    width: 60%;
+}

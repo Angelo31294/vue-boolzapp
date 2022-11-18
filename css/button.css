@@ -1,0 +1,18 @@
+/* -----------------
+    BUTTON
+----------------- */
+
+button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-search{
+    width: 15%;
+    padding: .3125rem;
+    font-size: .75rem;
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+}
