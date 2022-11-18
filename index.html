@@ -26,11 +26,29 @@
             <!-- Lista delle Chat -->
             <div class="col-left">
                 <!-- Header left -->
-                <div class="header-app"></div>
+                <div class="header-app">
+                    <div class="image-data">
+                        <img src="img/avatar_io.jpg" alt="Sofia">
+                        <span>Sofia</span>
+                    </div>
+                    <ul class="list">
+                        <li><a href="#"><i class="fa-solid fa-circle-notch"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-message"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+                    </ul>
+                </div>
                 <!-- /Header left -->
 
                 <!-- Notifiche -->
-                <div class="notify"></div>
+                <div class="notify">
+                    <div class="bell">
+                        <i class="fa-solid fa-bell-slash"></i>
+                    </div>
+                    <div class="info-notify">
+                        <h5>Ricevi notifiche di nuovi messaggi</h5>
+                        <h6><a href="#">Attiva notifiche da desktop</a></h6>
+                    </div>
+                </div>
                 <!-- /Notifiche -->
 
                 <!-- Search bar -->
@@ -43,7 +61,20 @@
                 <!-- /Search bar -->
 
                 <!-- Contacts -->
-                <div class="contacts"></div>
+                <div class="contacts">
+                    <div v-for="contact in contacts" class="contact">
+                        <div class="avatar">
+                            <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
+                            <div>
+                                <span>{{ contact.name }}</span>
+                                <h6><small>Ultimo messaggio inviato</small></h6>
+                            </div>
+                        </div>
+                        <div class="last-message">
+                            <small>12:00</small>
+                        </div>
+                    </div>
+                </div>
                 <!-- /Contacts -->
             </div>
             <!-- /Lista delle Chat -->
@@ -51,7 +82,9 @@
             <!-- Chat Aperta -->
             <div class="col-right">
                 <!-- Header right -->
-                <div class="header-app"></div>
+                <div class="header-app">
+
+                </div>
                 <!-- /Header right -->
 
                 <!-- Messages -->
@@ -67,7 +100,7 @@
                         </div>
                     </div>
                     <div class="message-container">
-                        <div class="message received">
+                        <div class="message">
                             ciao
                         </div>
                     </div>
@@ -87,11 +120,7 @@
 </html>
 
 <!-- icone colonna di sinistra -->
-<!-- <ul class="d-flex item-center justify-around list">
-    <li><a href="#"><i class="fa-solid fa-circle-notch"></i></a></li>
-    <li><a href="#"><i class="fa-solid fa-message"></i></a></li>
-    <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
-</ul> -->
+<!--  -->
 
 <!-- icone colonna di destra -->
 <!-- <ul class="d-flex item-center justify-around list">

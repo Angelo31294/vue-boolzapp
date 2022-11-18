@@ -8,17 +8,39 @@ body {
     padding: 1.25rem 1.875rem;
 }
 
-img {
-    max-width: 3.125rem;
-    border-radius: 50%;
-}
-
 .header-app{
     display: flex;
     flex-shrink: 0;
     justify-content: space-between;
     background-color: #eaeaea;
     padding: .3125rem
+}
+
+.image-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-data > span{
+    padding-left: .3125rem;
+}
+
+img {
+    max-width: 3.125rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+li > a{
+    color: #b1b1b1;
+    padding-right: 1.25rem;
 }
 
 .notify{
@@ -28,13 +50,31 @@ img {
     padding: .3125rem;
 }
 
+.bell{
+    background-color: #fff;
+    padding: .9375rem;
+    border-radius: 50%;
+}
+
+.fa-bell-slash{
+    color: #8edafc;
+}
+
+.info-notify{
+    padding-left: .625rem;
+}
+
+h6 > a{
+    color: grey;
+}
+
 .search-bar{
     background-color: #fafafa;
     padding: .3125rem;
     border-bottom: 1px solid #d8dbd7;
 }
 
-input{
+.search-bar > input{
     width: 85%;
     font-size: .75rem;
     padding: .3125rem;
@@ -45,6 +85,30 @@ input{
     background-color: #fff;
     flex-grow: 1;
     overflow-y: auto;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+
+.avatar{
+    display: flex;
+
+    align-items: center;
+    padding: .625rem .3125rem;
+}
+
+.avatar > div{
+    padding-left: .625rem;
+}
+
+.last-message{
+    padding: 0 .625rem;
 }
 
 .messages{
@@ -73,12 +137,10 @@ input{
     min-width: 10%;
     border-radius: .625rem;
     padding: .625rem;
+    background-color: #fff;
 }
 
 .sent{
     background-color: #d5f9ba;
-}
-
-.received{
-    background-color: #fff;
+    margin-left: auto;
 }
