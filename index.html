@@ -65,12 +65,12 @@
                     <div v-for="contact in contacts" class="contact">
                         <div class="avatar">
                             <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
-                            <div>
+                            <div class="last-message">
                                 <span>{{ contact.name }}</span>
-                                <h6><small>Ultimo messaggio inviato</small></h6>
+                                <h5><small>Ultimo messaggio inviato</small></h5>
                             </div>
                         </div>
-                        <div class="last-message">
+                        <div class="last-message-hour">
                             <small>12:00</small>
                         </div>
                     </div>
@@ -83,32 +83,43 @@
             <div class="col-right">
                 <!-- Header right -->
                 <div class="header-app">
-
+                    <div class="image-data">
+                        <img src="img/avatar_1.jpg" alt="Sofia">
+                        <div class="last-access">
+                            <span>Michele</span>
+                            <h5><small>Ultimo accesso oggi alle 12:00</small></h5>
+                        </div>
+                    </div>
+                    <ul class="d-flex item-center justify-around list">
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+                    </ul>
                 </div>
                 <!-- /Header right -->
 
                 <!-- Messages -->
                 <div class="messages">
                     <div class="message-container">
-                        <div class="message sent">
-                            ciao
-                        </div>
-                    </div>
-                    <div class="message-container">
-                        <div class="message sent">
-                            ciao
-                        </div>
-                    </div>
-                    <div class="message-container">
-                        <div class="message">
-                            ciao
+                        <div class="message sent" >
+                            <span>
+                                ciao
+                            </span>
                         </div>
                     </div>
                 </div>
                 <!-- /Messages -->
 
                 <!-- Send message -->
-                <div class="send-message"></div>
+                <div class="send-message">
+                    <button class="btn-emoticon">
+                        <i class="fa-regular fa-face-smile"></i>
+                    </button>
+                    <input class="message-area" type="text" placeholder="scrivi un messaggio">
+                    <button class="btn-send">
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </button>
+                </div>
                 <!-- /Send message -->
             </div>
             <!-- /Chat Aperta -->
@@ -118,13 +129,3 @@
         <script src="js/script.js"></script>
     </body>
 </html>
-
-<!-- icone colonna di sinistra -->
-<!--  -->
-
-<!-- icone colonna di destra -->
-<!-- <ul class="d-flex item-center justify-around list">
-    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-    <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
-    <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
-</ul> -->

@@ -32,6 +32,14 @@ img {
     object-fit: cover;
 }
 
+.last-access{
+    padding-left: .3125rem;
+}
+
+.last-access > h5{
+    color: grey;
+}
+
 .list{
     display: flex;
     align-items: center;
@@ -111,6 +119,11 @@ h6 > a{
     padding: 0 .625rem;
 }
 
+.last-message-hour{
+    padding: 0 .625rem;
+    font-size: .8125rem;
+}
+
 .messages{
     background-image: url('/img/mine.jpg');
     flex-grow: 1;
@@ -125,7 +138,7 @@ h6 > a{
 .send-message{
     display: flex;
     background-color: #f3eeea;
-    padding: 1.875rem .3125rem;
+    padding: .9375rem .3125rem;
 }
 
 .message-container{
@@ -143,4 +156,11 @@ h6 > a{
 .sent{
     background-color: #d5f9ba;
     margin-left: auto;
+}
+
+.message-area{
+    width: 90%;
+    border: none;
+    border-radius: .125rem;
+    padding: 10px 0 10px 10px;
 }
