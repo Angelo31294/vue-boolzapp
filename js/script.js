@@ -183,8 +183,14 @@ const { createApp } = Vue
           status: 'sent',
           visible: true
         };
+        let response = {
+            message: 'ok',
+        };
         this.contacts[this.active].messages.push(objNewMessage);
         this.newText= '';
+        setTimeout( () => {
+            this.contacts[this.active].messages.push(response);
+        },1000);
     }
   }
 }).mount('#app')
