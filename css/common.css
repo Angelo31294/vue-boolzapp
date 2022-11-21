@@ -158,9 +158,17 @@ h6 > a{
     margin-left: auto;
 }
 
+.received{
+    background-color: #fff;
+}
+
 .message-area{
     width: 90%;
     border: none;
     border-radius: .125rem;
     padding: 10px 0 10px 10px;
+}
+
+.active{
+    background-color: #b1b1b1;
 }

@@ -62,7 +62,9 @@
 
                 <!-- Contacts -->
                 <div class="contacts">
-                    <div v-for="contact in contacts" class="contact">
+                    <div v-for="(contact, index) in contacts" 
+                        class="contact" :class="{ active: index === active }"
+                        @click="changeImage(index)">
                         <div class="avatar">
                             <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                             <div class="last-message">
@@ -100,13 +102,27 @@
 
                 <!-- Messages -->
                 <div class="messages">
-                    <div class="message-container">
+                    <div class="message-container" v-for="(contact,index) in contacts">
+                        <div class="message">
+                            <span>
+                                {{ contact.messages[active].message }}
+                            </span>
+                        </div>
+                    </div>
+                    <!-- <div class="message-container">
                         <div class="message sent" >
                             <span>
                                 ciao
                             </span>
                         </div>
                     </div>
+                    <div class="message-container">
+                        <div class="message received" >
+                            <span>
+                                ciao
+                            </span>
+                        </div>
+                    </div> -->
                 </div>
                 <!-- /Messages -->
 
