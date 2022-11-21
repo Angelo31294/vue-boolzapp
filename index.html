@@ -113,15 +113,15 @@
                 <!-- /Messages -->
 
                 <!-- Send message -->
-                <div class="send-message">
+                <form class="send-message" @submit.prevent="addTodo">
                     <button class="btn-emoticon">
                         <i class="fa-regular fa-face-smile"></i>
                     </button>
-                    <input class="message-area" type="text" placeholder="scrivi un messaggio">
-                    <button type="button" class="btn-send">
+                    <input class="message-area" type="text" placeholder="scrivi un messaggio" v-model="newText">
+                    <button type="submit" class="btn-send">
                         <i class="fa-regular fa-paper-plane"></i>
                     </button>
-                </div>
+                </form>
                 <!-- /Send message -->
             </div>
             <!-- /Chat Aperta -->

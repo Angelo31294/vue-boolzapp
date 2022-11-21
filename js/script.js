@@ -5,6 +5,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
+        newText: '',
         active: 0,
         contacts: [
         {
@@ -176,5 +177,14 @@ const { createApp } = Vue
     changeImage(index){
         this.active = index;
     },
+    addTodo() {
+        const objNewMessage = {
+          message: this.newText,
+          status: 'sent',
+          visible: true
+        };
+        this.contacts[this.active].messages.push(objNewMessage);
+        this.newText= '';
+    }
   }
 }).mount('#app')
